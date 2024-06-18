@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: mongodb
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: cagri
+      MONGO_INITDB_ROOT_PASSWORD: 3541
+    volumes:
+      - ./mongo_data:/data/db
+    networks:
+      dahbest:
+        aliases:
+          - mongodb
+        ipv4_address: 172.80.0.10
+
+networks:
+  dahbest:
+    name: dahbest
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.80.0.0/16
+
+volumes:
+  mongo_data:
+    driver: local
