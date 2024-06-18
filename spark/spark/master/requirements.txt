@@ -1,6 +1,0 @@
-numpy
-pandas
-requests
-findspark
-confluent-kafka
-
