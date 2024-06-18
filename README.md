@@ -12,6 +12,6 @@ Setup:
    
    ![Screenshot from 2024-06-18 23-16-53](https://github.com/mcagriaktas/SpotifyAPIs_Spark_Mongo/assets/52080028/69baf8e3-7788-4ba3-9faa-bdc193878012)
    
-4. Navigate to the git clone path and run docker-compose.yaml up -d --build.
+4. Navigate to the git clone path and check the spark and mongodb folder for how to build your containers.
 5. You can easily create an app for the Spotify API: https://developer.spotify.com/documentation/web-api.
 6. Then, check the main.py file to see how to start Spark and connect the Spark master container to MongoDB.
